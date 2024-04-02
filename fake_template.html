@@ -1,0 +1,13 @@
+<div>
+    {% for item in data['values'] %}
+        <div>
+            <b style='font-weight: bold; margin-bottom: 10px;'>{{ item['title'] }}</b>
+            <ul>
+                {% for value in item['values'] %}
+                    <li>{{ value }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+</div>
+    

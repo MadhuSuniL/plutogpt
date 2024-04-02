@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: plutogptbe
+    buildCommand: "./build.sh"
+    env: python
+    startCommand: "gunicorn plutogptbe.asgi:application"
+    
